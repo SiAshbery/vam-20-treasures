@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import valogo from './assets/svg/valogo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
+    document.body.classList.add('background--purple')
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="page__content">
+        <img src={valogo} className="logo--main" alt="Victoria and Albert Museum Logo" />
+        <div className="splash-page__text">
+          <div className="splash-page__title" >20 TREASURES</div>
+          <div className="splash-page__sub-title" >highlights from the collection</div>
+        </div> 
       </div>
     );
   }
