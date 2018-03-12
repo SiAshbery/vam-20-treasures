@@ -2,35 +2,24 @@
   text-align: center;
 }
 
-.background--purple {
- background-color: rgb(60,58,103);
- height: 100%;
- width: 100%;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
-.page__content {
-  margin: 40px;
-}
-
-.logo--main {
-  width: 120px;
-}
-
-.splash-page__text {
-  position: relative;
-  top: 50px;
-  left: 100px;
-}
-
-.splash-page__title {
-  font-size: 18px;
-  margin-bottom: 6px;
-  color: rgb(255, 112, 114);
-}
-
-.splash-page__sub-title {
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
-  width: 110px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
