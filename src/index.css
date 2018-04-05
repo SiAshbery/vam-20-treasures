@@ -3,3 +3,165 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.introblock__body {
+  background: #3d3969;
+}
+
+.infoblock__body {
+  background: white;
+}
+
+.introblock__content {
+  padding: 50px;
+}
+
+.infoblock__content {
+  padding: 50px;
+}
+
+.introblock__background-image--carpet {
+  /* The image used */
+    background-image: url("images/Ardabil_Carpet.jpg");
+
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introblock__background-image--cartoon {
+  /* The image used */
+    background-image: url("images/Raphael_Cartoon.jpg");
+
+    /* Set a specific height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introblock__header{
+  position: relative;
+  width: 10%;
+  height: 100px;
+  margin: auto;
+}
+
+.infoblock__header{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+}
+
+.introblock__title {
+  width: 150px;
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.infoblock__title {
+  width: 250px;
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+
+.introblock__title--main {
+  color: #ff7072;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  margin: 0;
+}
+
+.infoblock__title--main {
+  color: #3d3969;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin: 0;
+}
+
+.introblock__title--sub {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin:0;
+}
+
+.infoblock__title--sub {
+  color: #3d3969;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.infoblock__map-pin {
+  background-color: #ff7072;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  float: right;
+
+}
+
+.infoblock__map-pin-text {
+  color: #3d3969;
+  float: right;
+  font-size: 30px;
+  text-decoration: none;
+  line-height: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.infoblock__title-link {
+  color: #ff7072;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  margin:0 0 10px 0;
+}
+
+.introblock__text {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin:0;
+  text-align: left;
+}
+
+.infoblock__text {
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  margin:0;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.infoblock__text--disclaimer {
+  color: black;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  margin:0;
+  text-align: left;
+}
+
+.introblock__logo {
+  width: 160px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
