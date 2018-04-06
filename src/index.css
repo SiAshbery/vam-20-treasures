@@ -50,7 +50,8 @@ body {
 
 .introblock__header{
   position: relative;
-  width: 10%;
+  width: 100%;
+  max-width: 300px;
   height: 100px;
   margin: auto;
 }
@@ -58,6 +59,7 @@ body {
 .infoblock__header{
   position: relative;
   width: 100%;
+  max-width: 400px;
   height: 100px;
   margin: auto;
 }
@@ -65,17 +67,14 @@ body {
 .introblock__title {
   width: 150px;
   text-align: right;
-  display: inline-block;
-  position: absolute;
-  top: -6px;
-  left: 0;
+  margin-top: -94px;
+  float: right;
 }
 
 .infoblock__title {
   width: 250px;
   text-align: left;
   display: inline-block;
-  position: absolute;
   left: 0;
 }
 
@@ -113,17 +112,20 @@ body {
   width: 60px;
   border-radius: 50%;
   float: right;
-
-}
+  line-height: 60px;
+  outline:0;
+  cursor: pointer;
+  position: relative;
+} 
 
 .infoblock__map-pin-text {
+  position: absolute;
   color: #3d3969;
-  float: right;
   font-size: 30px;
   text-decoration: none;
-  line-height: 200px;
-  height: 200px;
   margin: auto;
+  bottom: -1px;
+  right: 22px;
 }
 
 .infoblock__title-link {
@@ -160,8 +162,5 @@ body {
 
 .introblock__logo {
   width: 160px;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  float: left;
 }

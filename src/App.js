@@ -18,11 +18,11 @@ const IntroBlock = (props) => (
   <div className="introblock__body">
     <div className="introblock__content">
       <div className="introblock__header">
+        <img src='icons/logo.svg' className="introblock__logo" alt="Victoria and Albert Museum Logo" />
         <div className="introblock__title">
           <h1 className="introblock__title--main">20 TREASURES</h1>
           <h2 className="introblock__title--sub">Highlights from the collection</h2>
         </div>
-        <img src='icons/logo.svg' className="introblock__logo" alt="Victoria and Albert Museum Logo" />
       </div>
       <div className="introblock__text">
         <p>
@@ -71,9 +71,9 @@ const InfoBlock = (props) => (
             THE RAPHAEL CARTOONS, Room 48a, Level 1
           </a>
         </div>
-        <a href='#' className="infoblock__map-pin">
+        <button href='#' className="infoblock__map-pin">
           <div className='infoblock__map-pin-text'>1</div>
-        </a>
+        </button>
       </div>
       <div className="infoblock__text">
         <p>
