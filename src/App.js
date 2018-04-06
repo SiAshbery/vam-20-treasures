@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import BackgroundImage from './BackgroundImage'
 
 const Page = ({ title }) => (
     <div className="App">
@@ -10,9 +11,9 @@ const Page = ({ title }) => (
     </div>
 );
 
-const BackgroundImage = (props) => (
-  <div className={props.className} />
-);
+// const BackgroundImage = (props) => (
+//   <div className={props.className} />
+// );
 
 const IntroBlock = (props) => (
   <div className="introblock__body">
