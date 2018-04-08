@@ -6,6 +6,7 @@ import InfoBlock from './InfoBlock'
 import IntroBlock from './IntroBlock'
 import ardabilCarpetImage from './images/Ardabil_Carpet.jpg'
 import raphaelCartoonImage from './images/Raphael_Cartoon.jpg'
+import tipuTigerImage from './images/Tipu_Tiger.jpg'
 
 export default class Page extends Component {
   raphaelInfo() {
@@ -48,6 +49,43 @@ export default class Page extends Component {
     );
   }
 
+  tigerInfo() {
+    return (
+      <div>
+        <p>
+          Tipu’s Tiger is seen as a symbol of the
+          strength of its owner, Tipu Sultan. Tipu
+          was ruler of Mysore in south India from
+          1782 to 1799. A powerful leader, he fought
+          back against attacks on his kingdom
+          from the British East India Company.
+        </p>
+        <p>
+          The tiger
+          was Tipu’s personal emblem – he had many of
+          his possessions decorated with tiger designs,
+          including his throne. This almost life-sized model
+          shows a tiger devouring a European enemy. A
+          handle on the side of its body can be turned to
+          work a mechanical organ hidden inside, which
+          makes the sound of the growling animal and cries
+          of its victim.
+        </p>
+        <p>
+          Tipu was defeated by the British in 1799, and
+          this tiger was taken from his palace and brought
+          to London. It was exhibited in the East India
+          Company’s museum where it became a favourite
+          with visitors. Moved to the South Kensington
+          Museum (now the V&A) in 1879, it continues to
+          intrigue.
+        </p>
+        <YoutubeEmbed videoSource='https://www.youtube.com/embed/jVPq_7kIufw'
+                      title='Tipu'/>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,6 +99,13 @@ export default class Page extends Component {
                    mapPin='1'
                    body={this.raphaelInfo}
                    credit='On loan from Her Majesty Queen Elizabeth II'/>
+        <BackgroundImage image={tipuTigerImage} />
+        <InfoBlock title='Tipu’s Tiger, about 17935'
+                   mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room41'
+                   location='south asia, Room 41, Level 1'
+                   mapPin='2'
+                   body={this.tigerInfo}
+                   credit='Museum no. 2545 (IS)'/>
       </div>
     );
   }

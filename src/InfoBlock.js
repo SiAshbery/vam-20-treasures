@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 
 export default class InfoBlock extends Component {
+  renderSubtitle() {
+    if (this.props.subTitle) {
+      return (
+        <h2 className="infoblock__title--sub">
+          {this.props.subTitle}
+        </h2>
+      );
+    }
+  }
   render() {
     return (
       <div className="infoblock__body">
@@ -9,7 +18,7 @@ export default class InfoBlock extends Component {
           <div className="infoblock__header">
             <div className="infoblock__title">
               <h1 className="infoblock__title--main">{this.props.title}</h1>
-              <h2 className="infoblock__title--sub">{this.props.subTitle}</h2>
+              {this.renderSubtitle()}
               <a href={this.props.mapLink} className="infoblock__title-link" >
                 {this.props.location}
               </a>
