@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import BackgroundImage from './BackgroundImage'
+import YoutubeEmbed from './YoutubeEmbed'
 
 const Page = ({ title }) => (
     <div className="App">
@@ -68,13 +69,13 @@ const InfoBlock = (props) => (
         <div className="infoblock__title">
           <h1 className="infoblock__title--main">The Raphael Cartoons, 1515-16</h1>
           <h2 className="infoblock__title--sub">Raphael (1483-1520)</h2>
-          <a href='somewhere' className="infoblock__title-link" >
+          <a href='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room48a' className="infoblock__title-link" >
             THE RAPHAEL CARTOONS, Room 48a, Level 1
           </a>
         </div>
-        <button href='#' className="infoblock__map-pin">
+        <a href='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room48a' className="infoblock__map-pin">
           <div className='infoblock__map-pin-text'>1</div>
-        </button>
+        </a>
       </div>
       <div className="infoblock__text">
         <p>
@@ -87,6 +88,8 @@ const InfoBlock = (props) => (
           time and was working on the decoration of the
           Vatican Palace.
         </p>
+        <YoutubeEmbed videoSource='https://www.youtube.com/embed/jWxsu7qOjo8'
+                      title='Raphael'/>
         <p>
           The Cartoons show episodes from the Acts of
           Apostles - the lives of St Peter and St Paul,

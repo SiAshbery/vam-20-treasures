@@ -33,7 +33,7 @@ export default class BackgroundImage extends Component {
     const scrolledHeight = window.pageYOffset
     const limit = offsetTop + offsetHeight;
     if(scrolledHeight > offsetTop && scrolledHeight <= limit) {
-      style.backgroundPositionY = (scrolledHeight - offsetTop) / 1.5 + 'px'
+      style.backgroundPositionY = (scrolledHeight - offsetTop) / 3 + 'px'
     } else {
       style.backgroundPositionY = '0'
     }

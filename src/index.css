@@ -20,20 +20,6 @@ body {
   padding: 50px;
 }
 
-.introblock__background-image--carpet {
-    background-image: url("images/Ardabil_Carpet.jpg");
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.introblock__background-image--cartoon {
-    background-image: url("images/Raphael_Cartoon.jpg");
-    height: 900px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .introblock__header{
   position: relative;
   width: 100%;
@@ -111,7 +97,7 @@ body {
   text-decoration: none;
   margin: auto;
   bottom: -1px;
-  right: 22px;
+  right: 20px;
 }
 
 .infoblock__title-link {
@@ -149,4 +135,11 @@ body {
 .introblock__logo {
   width: 160px;
   float: left;
+}
+
+.infoblock__youtube {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
 }
