@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import BackgroundImage from './BackgroundImage'
 import YoutubeEmbed from './YoutubeEmbed'
+import ardabilCarpetImage from './images/Ardabil_Carpet.jpg'
+import raphaelCartoonImage from './images/Raphael_Cartoon.jpg'
 
 const Page = ({ title }) => (
     <div className="App">
-      <BackgroundImage image="/static/media/Ardabil_Carpet.d745b4e6.jpg" />
+      <BackgroundImage image={ardabilCarpetImage} />
       <IntroBlock />
-      <BackgroundImage image="/static/media/Raphael_Cartoon.d1b81e71.jpg" />
+      <BackgroundImage image={raphaelCartoonImage} />
       <InfoBlock />
     </div>
 );
