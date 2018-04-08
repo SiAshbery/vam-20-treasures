@@ -21,25 +21,15 @@ body {
 }
 
 .introblock__background-image--carpet {
-  /* The image used */
     background-image: url("images/Ardabil_Carpet.jpg");
-
-    /* Set a specific height */
     height: 600px;
-
-    /* Create the parallax scrolling effect */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .introblock__background-image--cartoon {
-  /* The image used */
     background-image: url("images/Raphael_Cartoon.jpg");
-
-    /* Set a specific height */
     height: 900px;
-
-    /* Create the parallax scrolling effect */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -112,7 +102,7 @@ body {
   outline:0;
   cursor: pointer;
   position: relative;
-} 
+}
 
 .infoblock__map-pin-text {
   position: absolute;

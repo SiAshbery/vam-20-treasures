@@ -4,9 +4,9 @@ import BackgroundImage from './BackgroundImage'
 
 const Page = ({ title }) => (
     <div className="App">
-      <BackgroundImage className="introblock__background-image--carpet js-bg-parallax" />
+      <BackgroundImage image="/static/media/Ardabil_Carpet.d745b4e6.jpg" />
       <IntroBlock />
-      <BackgroundImage className="introblock__background-image--cartoon js-bg-parallax" />
+      <BackgroundImage image="/static/media/Raphael_Cartoon.d1b81e71.jpg" />
       <InfoBlock />
     </div>
 );

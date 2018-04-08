@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom'
 import './App.css';
 
-class BackgroundImage extends Component {
+export default class BackgroundImage extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      style: {
+        backgroundImage: `url("${this.props.image}")`,
+        height: '600px',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPositionY: '0'
+      }
+    };
+    this.parallaxBackground = this.parallaxBackground.bind(this)
+  }
 
   componentDidMount() {
     window.addEventListener("scroll", this.parallaxBackground);
@@ -11,22 +26,23 @@ class BackgroundImage extends Component {
     window.addEventListener("scroll", this.parallaxBackground);
   }
 
-  parallaxBackground () {
-    const scrolledHeight = window.pageYOffset,
-    limit = this.offsetTop + this.offsetHeight;
-    if(scrolledHeight > this.offetTop && scrolledHeight <= limit) {
-      // TODO workout how to update components style on the fly
-      this.style.backgroundPositionY = (scrolledHeight - this.offsetTop) / 1.5 + 'px';
+  parallaxBackground() {
+    const style = Object.assign({}, this.state.style);
+    const offsetTop = ReactDOM.findDOMNode(this).offsetTop
+    const offsetHeight = ReactDOM.findDOMNode(this).offsetHeight
+    const scrolledHeight = window.pageYOffset
+    const limit = offsetTop + offsetHeight;
+    if(scrolledHeight > offsetTop && scrolledHeight <= limit) {
+      style.backgroundPositionY = (scrolledHeight - offsetTop) / 1.5 + 'px'
     } else {
-      this.style.backgroundPositionY = "0"
+      style.backgroundPositionY = '0'
     }
+    this.setState({style});
   }
 
   render() {
     return (
-      <div className={this.props.className} />
+      <div style={this.state.style} />
     );
   }
 }
-
-export default BackgroundImage;
