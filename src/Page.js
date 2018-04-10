@@ -63,7 +63,7 @@ export default class Page extends Component {
           back against attacks on his kingdom
           from the British East India Company.
         </p>
-        <SketchfabEmbed videoSource='https://sketchfab.com/models/bb41d9410d134d82b11f6366990adc48/embed'
+        <SketchfabEmbed modelSource='https://sketchfab.com/models/bb41d9410d134d82b11f6366990adc48/embed'
           title='Lion' />
         <p>
           The tiger
@@ -117,3 +117,4 @@ export default class Page extends Component {
     );
   }
 }
+
