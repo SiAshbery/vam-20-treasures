@@ -2,11 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import BackgroundImage from './BackgroundImage'
 import YoutubeEmbed from './YoutubeEmbed'
+import SketchfabEmbed from './SketchfabEmbed'
 import InfoBlock from './InfoBlock'
 import IntroBlock from './IntroBlock'
+import BackPage from './BackPage'
 import ardabilCarpetImage from './images/Ardabil_Carpet.jpg'
 import raphaelCartoonImage from './images/Raphael_Cartoon.jpg'
 import tipuTigerImage from './images/Tipu_Tiger.jpg'
+import VAMImage from './images/VAM_background.jpg'
 
 export default class Page extends Component {
   raphaelInfo() {
@@ -60,6 +63,8 @@ export default class Page extends Component {
           back against attacks on his kingdom
           from the British East India Company.
         </p>
+        <SketchfabEmbed videoSource='https://sketchfab.com/models/bb41d9410d134d82b11f6366990adc48/embed'
+          title='Lion' />
         <p>
           The tiger
           was Tipu’s personal emblem – he had many of
@@ -106,6 +111,8 @@ export default class Page extends Component {
                    mapPin='2'
                    body={this.tigerInfo}
                    credit='Museum no. 2545 (IS)'/>
+        <BackgroundImage image={VAMImage} />
+        <BackPage />
       </div>
     );
   }

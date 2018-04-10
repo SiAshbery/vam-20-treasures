@@ -1,6 +1,7 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1280px;
   font-family: sans-serif;
 }
 
@@ -51,35 +52,35 @@ body {
 }
 
 .introblock__title--main {
-  color: #ff7072;
-  font-family: 'Open Sans';
-  font-size: 20px;
+  color: #fd7971;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
   margin: 0;
 }
 
 .infoblock__title--main {
   color: #3d3969;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 18px;
   margin: 0;
 }
 
 .introblock__title--sub {
   color: white;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 18px;
   margin:0;
 }
 
 .infoblock__title--sub {
   color: #3d3969;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 16px;
   margin: 0 0 10px 0;
 }
 
 .infoblock__map-pin {
-  background-color: #ff7072;
+  background-color: #fd7971;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -101,15 +102,15 @@ body {
 }
 
 .infoblock__title-link {
-  color: #ff7072;
-  font-family: 'Open Sans';
+  color: #fd7971;
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
   margin:0 0 10px 0;
 }
 
 .introblock__text {
   color: white;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 18px;
   margin:0;
   text-align: left;
@@ -117,7 +118,7 @@ body {
 
 .infoblock__text {
   color: black;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 18px;
   margin:0;
   text-align: left;
@@ -126,7 +127,7 @@ body {
 
 .infoblock__text--disclaimer {
   color: black;
-  font-family: 'Open Sans';
+  font-family: Open Sans, sans-serif;
   font-size: 14px;
   margin:0;
   text-align: left;
@@ -142,4 +143,28 @@ body {
   width: 100%;
   max-width: 560px;
   margin: auto;
+}
+
+.backpage__content-block {
+  color: white;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  margin:0;
+  text-align: left;
+}
+
+.backpage__content-block a {
+  color: #3d3969;
+}
+
+.backpage__body {
+  background: #fd7971;
+}
+
+.backpage__content-block {
+  margin-bottom: 60px;
+}
+
+.backpage__funding-info {
+  width: 260px;
 }
