@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/App.css';
 import BackgroundImage from './BackgroundImage'
 import YoutubeEmbed from './YoutubeEmbed'
 import SketchfabEmbed from './SketchfabEmbed'

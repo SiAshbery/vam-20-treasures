@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './stylesheets/App.css';
 import vamIcon from './images/icons/logo.svg';
 
 
@@ -11,7 +11,9 @@ export default class IntroBlock extends Component {
           <div className="introblock__header">
             <img src={vamIcon} className="introblock__logo" alt="Victoria and Albert Museum Logo" />
             <div className="introblock__title">
-              <h1 className="introblock__title--main">20 TREASURES</h1>
+              <h1 class="b-event-teaser__title" aria-label="20 TREASURES" itemprop="name" content="20 TREASURES">
+                20 TREASURES
+              </h1>
               <h2 className="introblock__title--sub">Highlights from the collection</h2>
             </div>
           </div>

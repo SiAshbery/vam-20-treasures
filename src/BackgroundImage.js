@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
-import './App.css';
+import './stylesheets/App.css';
 
 export default class BackgroundImage extends Component {
 
