@@ -6,7 +6,6 @@ import SketchfabEmbed from './SketchfabEmbed'
 import InfoBlock from './InfoBlock'
 import IntroBlock from './IntroBlock'
 import BackPage from './BackPage'
-import ardabilCarpetImage from './images/Ardabil_Carpet.jpg'
 import raphaelCartoonImage from './images/Raphael_Cartoon.jpg'
 import tipuTigerImage from './images/Tipu_Tiger.jpg'
 import VAMImage from './images/VAM_background.jpg'
@@ -94,23 +93,23 @@ export default class Page extends Component {
   render() {
     return (
       <div className="App">
-        <BackgroundImage image={ardabilCarpetImage} />
+      {/* offsetTop from the above div */}
         <IntroBlock />
-        <BackgroundImage image={raphaelCartoonImage} />
         <InfoBlock title='The Raphael Cartoons, 1515-16'
                    subTitle='Raphael (1483-1520)'
                    mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room48a'
                    location='THE RAPHAEL CARTOONS, Room 48a, Level 1'
                    mapPin='1'
                    body={this.raphaelInfo}
-                   credit='On loan from Her Majesty Queen Elizabeth II'/>
-        <BackgroundImage image={tipuTigerImage} />
+                   credit='On loan from Her Majesty Queen Elizabeth II'
+                   backgroundImage={raphaelCartoonImage}/>
         <InfoBlock title='Tipu’s Tiger, about 17935'
                    mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room41'
                    location='south asia, Room 41, Level 1'
                    mapPin='2'
                    body={this.tigerInfo}
-                   credit='Museum no. 2545 (IS)'/>
+                   credit='Museum no. 2545 (IS)'
+                   backgroundImage={tipuTigerImage}/>
         <BackgroundImage image={VAMImage} />
         <BackPage />
       </div>

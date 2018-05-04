@@ -1,0 +1,106 @@
+.infoblock {
+  position: relative;
+  text-align: center; }
+  .infoblock__header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: auto; }
+  .infoblock__body {
+    background: white; }
+  .infoblock__content {
+    padding: 80px 10%; }
+    @media (min-width: 500px) {
+      .infoblock__content {
+        padding: 80px 20%; } }
+  .infoblock__map-pin {
+    background-color: #fde081;
+    border-radius: 50%;
+    float: right;
+    line-height: 60px;
+    outline: 0;
+    cursor: pointer;
+    margin: 20px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 160px;
+    height: 160px; }
+    @media (min-width: 500px) {
+      .infoblock__map-pin {
+        width: 220px;
+        height: 220px; } }
+    .infoblock__map-pin--text {
+      text-align: center;
+      color: #3d3969;
+      font-size: 80px;
+      font-family: Open Sans, sans-serif;
+      text-decoration: none;
+      line-height: 150px;
+      margin: auto;
+      bottom: -1px;
+      right: 20px; }
+      @media (min-width: 500px) {
+        .infoblock__map-pin--text {
+          font-size: 100px;
+          line-height: 220px; } }
+  .infoblock__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 20px; }
+    .infoblock__title--heading {
+      color: white;
+      font-size: 34px;
+      font-weight: 600;
+      letter-spacing: -.0125em;
+      line-height: 1.075;
+      text-rendering: optimizeLegibility;
+      margin-bottom: 0;
+      text-align: left;
+      font-family: Open Sans, sans-serif; }
+      @media (min-width: 500px) {
+        .infoblock__title--heading {
+          font-size: 48px;
+          margin-bottom: 10px; } }
+    .infoblock__title--sub {
+      color: white;
+      font-family: Open Sans, sans-serif;
+      font-size: 24px;
+      margin: 0 0 10px 0;
+      text-align: left; }
+      @media (min-width: 500px) {
+        .infoblock__title--sub {
+          font-size: 32px; } }
+    .infoblock__title--link {
+      color: #fde081;
+      font-family: Open Sans, sans-serif;
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+      text-align: left;
+      text-decoration: underline;
+      position: absolute;
+      left: 0; }
+
+.infoblock__text {
+  color: black;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+  padding-top: 10px; }
+
+.infoblock__text--disclaimer {
+  color: black;
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  text-align: left; }
+
+.infoblock__youtube {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  margin: auto; }

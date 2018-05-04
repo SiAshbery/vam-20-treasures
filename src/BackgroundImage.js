@@ -8,7 +8,7 @@ export default class BackgroundImage extends Component {
     super(props);
     this.state = {
       style: {
-        backgroundImage: `url("${this.props.image}")`,
+        background: `linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url("${this.props.image}")`,
         height: '600px',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -18,20 +18,18 @@ export default class BackgroundImage extends Component {
     this.parallaxBackground = this.parallaxBackground.bind(this)
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.parallaxBackground);
-  }
-
   componentWillMount() {
     window.addEventListener("scroll", this.parallaxBackground);
   }
 
   parallaxBackground() {
     const style = Object.assign({}, this.state.style);
-    const offsetTop = ReactDOM.findDOMNode(this).offsetTop
-    const offsetHeight = ReactDOM.findDOMNode(this).offsetHeight
-    const scrolledHeight = window.pageYOffset
+    const offsetTop = ReactDOM.findDOMNode(this).offsetTop;
+    const offsetHeight = ReactDOM.findDOMNode(this).offsetHeight;
+    const scrolledHeight = window.pageYOffset;
     const limit = offsetTop + offsetHeight;
+    // not offsetting properly, offsetTop works relative to the parent node.
+    // Need to get offset relative to the 'app' div
     if(scrolledHeight > offsetTop && scrolledHeight <= limit) {
       style.backgroundPositionY = (scrolledHeight - offsetTop) / 3 + 'px'
     } else {
