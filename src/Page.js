@@ -1,51 +1,75 @@
 import React, { Component } from 'react';
 import './stylesheets/App.css';
-import BackgroundImage from './BackgroundImage'
 import YoutubeEmbed from './YoutubeEmbed'
 import SketchfabEmbed from './SketchfabEmbed'
 import InfoBlock from './InfoBlock'
 import IntroBlock from './IntroBlock'
 import BackPage from './BackPage'
+
+// images
+import BackgroundImage from './BackgroundImage'
 import raphaelCartoonImage from './images/Raphael_Cartoon.jpg'
 import tipuTigerImage from './images/Tipu_Tiger.jpg'
 import VAMImage from './images/VAM_background.jpg'
+import ardabilCarpetImage from './images/Ardabil_Carpet.jpg'
+import stJohnImage from './images/st-john.jpg'
 
 export default class Page extends Component {
-  raphaelInfo() {
+  grandEntranceInfo() {
     return (
       <div>
         <p>
-          When Leo X became pope in 1513, he
-          comissioned a set of tapestry designs
-          to contribute to the ornate decoration
-          of the Sistine Chapel in Rome. He chose
-          Raphael as the designer, who was
-          already considered a great artist of the
-          time and was working on the decoration of the
-          Vatican Palace.
+          Entering the V&A through the Grand Entrance you
+          immediately come into a large, domed space. 
         </p>
-        <YoutubeEmbed videoSource='https://www.youtube.com/embed/jWxsu7qOjo8'
-                      title='Raphael'/>
+        <YoutubeEmbed videoSource='https://www.youtube.com/embed/BIGBx3A67AI'
+                      title='Entrance'/>
         <p>
-          The Cartoons show episodes from the Acts of
-          Apostles - the lives of St Peter and St Paul,
-          founders of the Christian Church.
+          Its form and decoration draw on the Classical Revival style of
+          16th century France, with pillars, arches, a dome and
+          surroundings of polished marble and stone. The aim was to
+          create an impression of grandeur and refinement.
         </p>
         <p>
-          The Tapestrie made from Raphaels designs vary
-          slightly: the images are reversed and some of
-          the colours are different. They were woven over
-          1000 miles from Rome, in Brussels between
-          1516 and 1521.
+          The Grand Entrance was also designed for practical purposes.
+          Circulation space was needed for people to plan their visit, get
+          information or meet others. These activities still take place today.
         </p>
         <p>
-          The Low Countries has been an important
-          centre for cloth-weaving since the early 14th
-          centure. The cartoons were sent there and
-          slced into large strips to make templates for
-          the weavers to use. Although they were
-          reassembled in the 17th centurey, today the
-          joins are still faintly visible.
+          Walk through the Grand Entrance hall and continue straight ahead through the Shop.
+          Carry on and go through the doors into the Garden. 
+        </p>
+      </div>
+    );
+  }
+
+  ardabilCarpetInfo() {
+    return (
+      <div>
+        <p>
+          The Ardabil Carpet is the world's oldest dated
+          carpet and one of the largest, most beautiful
+          and historically important.
+        </p>
+        <YoutubeEmbed videoSource='https://www.youtube.com/embed/BIGBx3A67AI'
+          title='Entrance' />
+        <p>
+          It was made in the town of Ardabil in north-west Iran,
+          the burial place of Shaykh Safi al-Din Ardabili,
+          who died in 1334.
+          The Shaykh was a Sufi leader,
+          ancestor of Shah Ismail,
+          founder of the Safavid dynasty (1501-1722).
+          While the exact origins of the carpet are unclear,
+          it's believed to have been commissioned by the court for the shrine of the Shaykh,
+          which, by the 16th century, had became a place of pilgrimage.
+        </p>
+        <p>
+          We can date the carpet exactly thanks to an inscription on one edge,
+          which contains a poetic inscription,
+          a signature - 'The work of the slave of the portal, Maqsud Kashani’,
+          and the date, 946 in the Muslim calendar, equivalent to AD 1539 - 1540.
+          Maqsud was probably the court official charged with producing the carpet and not a slave in the literal sense.
         </p>
       </div>
     );
@@ -90,26 +114,88 @@ export default class Page extends Component {
     );
   }
 
+  stJohnInfo() {
+    return (
+      <div>
+        <p>
+          St John the Baptist was Rodin's second large bronze
+          figure study. Begun in 1878, the head was exhibited
+          independently in the Paris Salon of 1879,
+          followed by the whole figure in plaster in 1880
+          (with a cross, later abandoned) and in bronze
+          the following year. It was acquired by the French
+          state in 1884 for the Luxembourg Gardens in Paris.
+          An early model for the figure,
+          lacking the head and arms,
+          was later exhibited as the Walking Man. 
+        </p>
+        <p>
+          To counteract the damning criticism of casting
+          from the live model that greeted his first figure,
+          The Age of Bronze, the figure of St John the Baptist
+          was made slightly over life-size.
+        </p>
+        <SketchfabEmbed modelSource='https://sketchfab.com/models/387889bbe73648c38589a3fffd1f876c/embed'
+          title='Rodin' />
+        <p>
+           Rodin did not set out to make a religious subject,
+         but the naturally awkward yet forceful pose of his untrained model,
+         an Italian peasant from the Abruzzi named Pignatelli
+         (the head was taken from a separate model), suggested to
+         him a raw mystical character appropriate to the Baptist. This bronze,
+         the first work by Rodin to enter an English public collection,
+         was presented to the Museum in 1902 by a committee of the
+         sculptor's supporters who had set up a subscription to acquire one of
+         his pieces for the nation. To acknowledge the successful campaign,
+         Rodin was invited to a celebration at the Café Royal, after which students
+         from the Slade and South Kensington
+         Art Schools pulled Rodin's carriage through the streets of
+         London in homage to the artist. St John the Baptist thus became
+         the official symbol of Rodin's dominant influence on establishment
+         sculpture of the early 20th century. The Museum's collection of Rodin's
+         sculpture was later substantially increased by the gift of 18 works from
+         the artist himself in 1914.
+        </p>
+      </div>
+    );
+  }
+
   render() {
     return (
       <div className="App">
       {/* offsetTop from the above div */}
         <IntroBlock />
-        <InfoBlock title='The Raphael Cartoons, 1515-16'
-                   subTitle='Raphael (1483-1520)'
-                   mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room48a'
-                   location='THE RAPHAEL CARTOONS, Room 48a, Level 1'
+        <InfoBlock title='The Grand Entrance, 1904–1909'
+          subTitle='Aston Webb (1849-1930)'
+          mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=access_x5F_entrance_x5F_grand'
+                   location='THE GRAND ENTRACE, Level 1'
                    mapPin='1'
-                   body={this.raphaelInfo}
+                   body={this.grandEntranceInfo}
                    credit='On loan from Her Majesty Queen Elizabeth II'
-                   backgroundImage={raphaelCartoonImage}/>
-        <InfoBlock title='Tipu’s Tiger, about 17935'
+                   backgroundImage={VAMImage}/>
+        <InfoBlock title='The Ardabil Carpet, 1539-1540'
+                   subTitle='Unknown'
+                   mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room42'
+                   location='Islamic Middle East, Room 42, Level 1'
+                   mapPin='2'
+                   body={this.ardabilCarpetInfo}
+                   credit=''
+                   backgroundImage={ardabilCarpetImage} />
+        <InfoBlock title='Tipu’s Tiger, about 1795'
                    mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room41'
                    location='south asia, Room 41, Level 1'
-                   mapPin='2'
+                   mapPin='3'
                    body={this.tigerInfo}
                    credit='Museum no. 2545 (IS)'
                    backgroundImage={tipuTigerImage}/>
+        <InfoBlock title='St John the Baptist, 1881'
+                   subTitle='Auguste Rodin (1840-1917)'
+                   mapLink='https://www.vam.ac.uk/features/digitalmap/#l=1&r=room21a'
+                   location='Sculpture, Room 21a, Level 1'
+                   mapPin='4'
+                   body={this.stJohnInfo}
+                   credit='Presented to the Museum by a Committee of Subscribers'
+                   backgroundImage={stJohnImage} />
         <BackgroundImage image={VAMImage} />
         <BackPage />
       </div>

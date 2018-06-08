@@ -798,21 +798,21 @@ ul {
   border-color: #998a23; }
 
 .theme-ocean-blue .s-themed--color {
-  color: #65cfcf;
+  color: #98f5da;
   transition: all .2s; }
 
 .theme-ocean-blue .s-themed--color--hover:hover {
   color: #6af0c9; }
 
 .theme-ocean-blue .s-themed--background-color {
-  background-color: #65cfcf;
+  background-color: #98f5da;
   transition: all .2s; }
 
 .theme-ocean-blue .s-themed--background-color--hover:hover {
   background-color: #6af0c9; }
 
 .theme-ocean-blue .s-themed--border-color, .theme-ocean-blue .s-themed--border-color--hover:hover {
-  border-color: #65cfcf;
+  border-color: #98f5da;
   transition: all .2s; }
 
 .s-themed .theme-ocean-blue {

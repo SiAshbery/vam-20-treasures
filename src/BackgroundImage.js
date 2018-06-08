@@ -24,18 +24,32 @@ export default class BackgroundImage extends Component {
 
   parallaxBackground() {
     const style = Object.assign({}, this.state.style);
-    const offsetTop = ReactDOM.findDOMNode(this).offsetTop;
-    const offsetHeight = ReactDOM.findDOMNode(this).offsetHeight;
+    const offsetTop = this.absoluteOffset(ReactDOM.findDOMNode(this));
     const scrolledHeight = window.pageYOffset;
-    const limit = offsetTop + offsetHeight;
-    // not offsetting properly, offsetTop works relative to the parent node.
-    // Need to get offset relative to the 'app' div
+    const limit = offsetTop + ReactDOM.findDOMNode(this).offsetHeight;
+
     if(scrolledHeight > offsetTop && scrolledHeight <= limit) {
       style.backgroundPositionY = (scrolledHeight - offsetTop) / 3 + 'px'
     } else {
       style.backgroundPositionY = '0'
     }
     this.setState({style});
+  }
+
+  absoluteOffset(element) {
+    let absoluteTop = 0;
+
+    let stepOffset = (parent) => {
+      if (!!parent) {
+        absoluteTop += parent.offsetTop;
+        stepOffset(parent.offsetParent);
+      } else {
+        return absoluteTop;
+      }
+    }
+    
+    stepOffset(element);
+    return absoluteTop;
   }
 
   render() {

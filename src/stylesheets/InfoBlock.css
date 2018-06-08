@@ -24,9 +24,9 @@
     bottom: 0;
     position: absolute;
     right: 0;
-    width: 160px;
-    height: 160px; }
-    @media (min-width: 500px) {
+    width: 140px;
+    height: 140px; }
+    @media (min-width: 992px) {
       .infoblock__map-pin {
         width: 220px;
         height: 220px; } }
@@ -36,11 +36,11 @@
       font-size: 80px;
       font-family: Open Sans, sans-serif;
       text-decoration: none;
-      line-height: 150px;
+      line-height: 140px;
       margin: auto;
       bottom: -1px;
       right: 20px; }
-      @media (min-width: 500px) {
+      @media (min-width: 992px) {
         .infoblock__map-pin--text {
           font-size: 100px;
           line-height: 220px; } }
@@ -103,4 +103,4 @@
   display: block;
   width: 100%;
   max-width: 560px;
-  margin: auto; }
+  margin: 20px auto; }
